@@ -1,0 +1,107 @@
+html {
+    font-size: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(background-mobile.jpg); /* Designed by Freepik */
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+button:focus, button:active {
+    outline: none;
+}
+/* #start {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 100%;
+}
+#start h1 {
+    font-size: 3rem;
+}
+#start p {
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+#start button {
+    width: 7rem;
+    height: 7rem;
+    margin-left: calc(50% - 7rem / 2);
+    margin-top: 8rem;
+    background: #2ecc71;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+} */
+#game {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    position: absolute;
+}
+#press {
+    margin-left: calc(50% - 60px);
+    margin-top: 5vh;
+    width: 120px;
+    height: 120px;
+    background: #e74c3c;
+    border: 9px solid #c52a1a;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .3s;
+}
+#press:focus, #press:active {
+    outline: 0 !important;
+    background: #d63b2b;
+    border: 9px solid #b41a1a;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 20vh;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 5vh;
+}
+#upgrade {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    background: #f1c40f;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#upgrade:focus, #upgrade:active {
+    outline: none;
+}
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}

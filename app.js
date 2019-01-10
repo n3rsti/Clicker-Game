@@ -4,36 +4,33 @@ const game = new Vue({
         gain: 1,
         points: 0,
         goal: 30,
-        display: "display: none"
+        upgrade: [
+            1,
+            2,
+            3
+        ],
+        upgradePrice: [
+            10,
+            20,
+            50
+        ],
+        
     },
     methods: {
-        upgrade: function(){
-            this.points-= this.goal
-            this.gain++  
-            this.goal+= this.goal
-            if(this.points < this.goal){
-                this.display = "display: none"
-            }          
-        },
-        press: function(){
-            this.points+= this.gain
-            if(this.points > this.goal){
-                this.display = "display: block"
+        upgradeF: function(x){
+            if(this.points >= this.upgradePrice[x]){
+                this.gain += this.upgrade[x]
+                this.points -= this.upgradePrice[x]
+                this.upgradePrice[x] *= 2
+
             }
             else {
-                this.display = "display: none"
+                alert("Nie masz wystarczająco dużo monet")
             }
+                       
+        },            
+        press: function(){
+            this.points+= this.gain
         }
     }
 });
-/*const start = new Vue({
-    el: "#start",
-    data: {
-        position: "left: 0"
-    },
-    methods: {
-        start: function(){
-            this.position = ""
-        }
-    }
-}); */

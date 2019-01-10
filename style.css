@@ -72,6 +72,13 @@ button {
     font-size: 40px;
     color: #f1c40f;
 }
+.total {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 10vh;
+}
 #press:focus, #press:active {
     outline: 0 !important;
     background: #d63b2b;

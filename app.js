@@ -4,6 +4,7 @@ const game = new Vue({
         gain: 1,
         points: 0,
         goal: 30,
+        total: 0,
         upgrade: [
             1,
             2,
@@ -31,6 +32,7 @@ const game = new Vue({
         },            
         press: function(){
             this.points+= this.gain
+            this.total+= this.gain
         }
     }
 });

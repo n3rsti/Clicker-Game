@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
 <body>
     <div id="game">
         <h2 class="goal">Gain: {{ gain }} </h2>
@@ -22,7 +21,7 @@
             <h1><i class="fas fa-coins"></i> {{ points }} </h1>
         </div>
 
-        <button id="press" v-on:click="press()"></button>
+        <button id="press" v-on:click="press()" @keyup.enter="press()"></button>
         <h2 class="total">Total: {{ total }} </h2>
         <div class="shop">
             <div class="item">

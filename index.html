@@ -1,9 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Clicker game where you can score points in space">
+    <link rel="canonical" href="https://n3rsti.github.io/Clicker-Game/">
     <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
@@ -14,19 +17,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Space Clicker</title>
 </head>
+
 <body>
     <div id="game">
         <h2 class="goal">Gain: {{ gain }} </h2>
-        <div id="points">
+        <div class="points">
 
             <h1><i class="fas fa-coins"></i> {{ points }} </h1>
         </div>
 
-        <button id="press" v-on:click="press()" @keyup.enter="press()"></button>
+        <button class="press" v-on:click="press()"></button>
         <h2 class="total">Total: {{ total }} </h2>
         <div class="shop">
             <div class="item">
-                <div id="item-icon">
+                <div class="item-icon">
                     <button v-on:click="upgradeF(0)">
                         <h1>+{{ upgrade[0] }}</h1>
                     </button>
@@ -36,7 +40,7 @@
                 </div>
             </div>
             <div class="item">
-                <div id="item-icon">
+                <div class="item-icon">
                     <button v-on:click="upgradeF(1)">
                         <h1>+{{ upgrade[1] }}</h1>
                     </button>
@@ -46,7 +50,7 @@
                 </div>
             </div>
             <div class="item">
-                <div id="item-icon">
+                <div class="item-icon">
                     <button v-on:click="upgradeF(2)">
                         <h1>+{{ upgrade[2] }}</h1>
                     </button>

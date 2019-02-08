@@ -24,42 +24,13 @@ button:focus, button:active {
 button {
     cursor: pointer;
 }
-/* #start {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 100%;
-}
-#start h1 {
-    font-size: 3rem;
-}
-#start p {
-    width: 80%;
-    margin-top: 15%;
-    margin-left: 10%;
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-#start button {
-    width: 7rem;
-    height: 7rem;
-    margin-left: calc(50% - 7rem / 2);
-    margin-top: 8rem;
-    background: #2ecc71;
-    border-radius: 9999px;
-    cursor: pointer;
-    border: none;
-} */
 #game {
     width: 100%;
     height: 100%;
     transition: .5s;
     position: absolute;
 }
-#press {
+.press {
     margin-left: calc(50% - 60px);
     margin-top: 7vh;
     width: 120px;
@@ -70,7 +41,7 @@ button {
     cursor: pointer;
     transition: .1s;
 }
-#points h1 i {
+.points h1 i {
     padding-right: 1%;
     font-size: 4rem;
     color: #f1c40f;
@@ -82,7 +53,7 @@ button {
     font-size: 2.5rem;
     margin-top: 10vh;
 }
-#press:active {
+.press:active {
     outline: 0 !important;
     background: #d63b2b;
     border: 9px solid #b41a1a;
@@ -97,11 +68,11 @@ h1 {
     font-family: sans-serif;
     margin-top: 20vh;
 }
-#points h1 {
+.points h1 {
     margin: 0;
     text-align: center;
 }
-#points {
+.points {
     width: 100%;
 }
 #game .goal {
@@ -112,28 +83,6 @@ h1 {
     font-weight: bold;
     font-family: sans-serif;
     margin-top: 5vh;
-}
-#upgrade {
-    position: absolute;
-    top: 75%;
-    left: 10%;
-    width: 50px;
-    height: 50px;
-    background: #f1c40f;
-    border: none;
-    border-radius: 100%;
-    cursor: pointer;
-}
-#upgrade:focus, #upgrade:active {
-    outline: none;
-}
-#game #upgrade i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 4rem;
 }
 .shop {
     width: 100%;
@@ -164,7 +113,7 @@ h1 {
     align-self: flex-end;
     margin-top: 2%;
 }
-.shop .item #item-icon button h1 {
+.shop .item .item-icon button h1 {
     color: white;
     font-size: 2rem;
     text-align: center;
@@ -173,14 +122,14 @@ h1 {
     padding: 0;
     width: 100%;
 }
-.shop .item #item-icon {
+.shop .item .item-icon {
     width: 100%;
     height: 70%;
     display: flex;
     flex-direction: flex-start;
     align-items: center;
 }
-.shop .item #item-icon button {
+.shop .item .item-icon button {
     width: 100%;
     height: 100%;
     background: none;
@@ -193,7 +142,7 @@ h1 {
     html {
         font-size: 14px;
     }
-    #press {
+    .press {
         height: 200px;
         width: 200px;
         margin-left: calc(50% - 100px);
@@ -210,7 +159,7 @@ h1 {
     .shop {
         bottom: 2%;
     }
-    #press {
+    .press {
         width: 80px;
         height: 80px;
         margin-left: calc(50% - 40px);

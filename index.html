@@ -24,7 +24,7 @@
         <h2 class="goal">Gain: {{ gain }} </h2>
         <div class="points">
 
-            <h1><i class="fas fa-coins"></i> {{ points }} </h1>
+            <h1><i class="fas fa-coins"></i> {{ points.toFixed(0) }} </h1>
         </div>
 
         <button class="press" v-on:click="press()"></button>
@@ -37,7 +37,7 @@
                     </button>
                 </div>
                 <div class="price">
-                    <h2> {{ upgradePrice[0] }} </h2>
+                    <h2> {{ upgradePrice[0].toFixed(0) }} </h2>
                 </div>
             </div>
             <div class="item">
@@ -47,7 +47,7 @@
                     </button>
                 </div>
                 <div class="price">
-                    <h2>{{ upgradePrice[1] }}</h2>
+                    <h2>{{ upgradePrice[1].toFixed(0) }}</h2>
                 </div>
             </div>
             <div class="item">
@@ -57,7 +57,7 @@
                     </button>
                 </div>
                 <div class="price">
-                    <h2>{{ upgradePrice[2] }}</h2>
+                    <h2>{{ upgradePrice[2].toFixed(0) }}</h2>
                 </div>
             </div>
         </div>

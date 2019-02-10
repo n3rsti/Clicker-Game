@@ -6,14 +6,14 @@ const game = new Vue({
         goal: 30,
         total: 0,
         upgrade: [
-            1,
             2,
-            3
+            5,
+            10
         ],
         upgradePrice: [
-            10,
-            20,
-            50
+            30,
+            50,
+            80
         ],
         
     },
@@ -22,7 +22,7 @@ const game = new Vue({
             if(this.points >= this.upgradePrice[x]){
                 this.gain += this.upgrade[x]
                 this.points -= this.upgradePrice[x]
-                this.upgradePrice[x] *= 1.5
+                this.upgradePrice[x] *= 2
 
             }
             else {
